@@ -21,7 +21,7 @@ def home_page():
 
 
     # ----- Top title -----
-    st.html("""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is Carlota Soler Bizarro</h1></div>""") 
+    st.html("""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is Carlota Soler Bizarro</h1></div>""") # TODO: Add your name
 
 
     # ----- Profile image file -----
@@ -52,7 +52,7 @@ def home_page():
 
     # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
     st.write("""
-    - 🧑‍💻 I am a <Current Role and/or Studies> 
+    - 🧑‍💻 I am a student of the Master of Big Data and Analytics in EAE Business School.
 
     - 🛩️ prev: <Previous Experience, Background or Studies>
 
