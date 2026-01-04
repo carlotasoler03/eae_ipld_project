@@ -54,9 +54,9 @@ def home_page():
     st.write("""
     - 🧑‍💻 I am a student of the Master of Big Data and Analytics in EAE Business School.
 
-    - 🛩️ prev: Bachelor in Business Administration and working experience as Project Manager
+    - 🛩️ prev: Bachelor in Business Administration and working experience as Project Manager.
 
-    - ❤️ My love ice skating, meeting friends and traveling.
+    - ❤️ I love ice skating, meeting friends and traveling.
 
     - 🤖 Working in a big company and having a family. 
 
