@@ -152,14 +152,22 @@ if unique_countries_list is not None and len(selected_cities) > 0:
 
     fig = plt.figure(figsize=(10, 5))
 
-    # for city in selected_cities:
-    #     city_df = None            # TODO
-    #     city_df_period = None     # TODO
-    #     plt.hist()                # TODO
+    for city in selected_cities:
+        city_df = temps_df[temps_df["City"] == city]            # TODO
+        city_df_period = city_df[
+        (city_df["Date"] >= start_date) &
+        (city_df["Date"] <= end_date)
+    ]     # TODO
+        plt.hist(
+        city_df_period["AvgTemperatureCelsius"],
+        bins=20,
+        alpha=0.5,
+        label=city
+    )                # TODO
 
-    # plt.title()   # TODO
-    # plt.xlabel()  # TODO
-    # plt.ylabel()  # TODO
+    plt.title(f"Histogram temperatures for list of cities from {start_date} to {end_date}")   # TODO
+    plt.xlabel("Temperature C")  # TODO
+    plt.ylabel("Frequency")  # TODO
 
     plt.legend()
 
