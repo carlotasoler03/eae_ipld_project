@@ -59,7 +59,8 @@ unique_countries = countries_series.unique()
 n_countries = len(unique_countries)
 
 # TODO: Ex 2.5: How many characters long are on average the title names?
-avg_title_length = None
+movies_df["title_length"] = movies_df["title"].apply(lambda x: len(x))
+avg_title_length = movies_df["title_length"].mean()
 
 
 # ----- Displaying the extracted information metrics -----
