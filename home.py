@@ -25,7 +25,7 @@ def home_page():
 
 
     # ----- Profile image file -----
-    profile_image_file_path = "profile.png"       # TODO: Upload your profile image to the same folder as this script and update this if it has a different name
+    profile_image_file_path = "25-02827 (1).jpg"       # TODO: Upload your profile image to the same folder as this script and update this if it has a different name
 
     with open(profile_image_file_path, "rb") as img_file:
         img = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
@@ -40,7 +40,7 @@ def home_page():
 
 
     # ----- Personal title or short description -----
-    current_role = "Current Role and/or Studies or Description"   # TODO: Change this
+    current_role = "I am currently studying Big Data and Analytics"   # TODO: Change this
 
     st.html(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""")
 
@@ -54,15 +54,15 @@ def home_page():
     st.write("""
     - 🧑‍💻 I am a student of the Master of Big Data and Analytics in EAE Business School.
 
-    - 🛩️ prev: <Previous Experience, Background or Studies>
+    - 🛩️ prev: Bachelor in Business Administration and working experience as Project Manager
 
-    - ❤️ <Your Passion and/or Interests>
+    - ❤️ My love ice skating, meeting friends and traveling.
 
-    - 🤖 <Your Personal Projects>
+    - 🤖 Working in a big company and having a family. 
 
-    - 🏂 <Your Hobbies>
+    - 🏂 My hobbies are going to the gym and reading.
 
-    - 📫 How to reach me: <Your Email>
+    - 📫 How to reach me: solerbizarro@gmail.com
 
     - 🏠 Barcelona
     """)
